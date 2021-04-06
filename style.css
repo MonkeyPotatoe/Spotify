@@ -1,7 +1,7 @@
 .nav  {
     background-color: black;
     color: white;
-    z-index: 1;
+   
     height: 100vh;
     
 }
@@ -9,4 +9,52 @@
 .navbar-button {
     border-radius: 20px !important;
 }
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+
+    content: "\f015";
+    padding: 0 10px 0 0;
+    font-family: "Font Awesome 5 Free";
+    z-index: 1;
+   
+    
+}
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+ .album-container {
+    background: rgb(2,0,36);
+background: linear-gradient(266deg, rgba(2,0,36,1) 20%, rgba(9,9,121,0.969625350140056) 79%, rgba(21,40,41,0.7399334733893557) 100%);
+color: white;
+  }
+
+  .card img {
+
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: black;
+    border-style: hidden;
+    
+  }
+
+  .card {
+    border-style: hidden !important;
+    
+
+      -webkit-box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.74);
+      -moz-box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.74);
+      box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.74);
+  }
+
+
 
