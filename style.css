@@ -1,0 +1,12 @@
+.nav  {
+    background-color: black;
+    color: white;
+    z-index: 1;
+    height: 100vh;
+    
+}
+
+.navbar-button {
+    border-radius: 20px !important;
+}
+
