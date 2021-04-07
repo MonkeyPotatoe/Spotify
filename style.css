@@ -125,7 +125,11 @@ body > div.container > h3 {
 }
 
 .top-items a i {
+<<<<<<< Updated upstream
     margin-right: 10px;}
+=======
+    margin-right: 10px; }
+>>>>>>> Stashed changes
 
 .nav {
   background-color: black;
@@ -210,7 +214,12 @@ display: block;
 }
 
 .menu-album-2 > div:hover{
-    color: grey;
+    color:white;
+}
+
+.menu-album-2{
+    color:grey
+    
 }
 
 .displayN {
@@ -220,4 +229,9 @@ display:none
 .displayY {
     display: block;
 
+}
+
+.card-karaoke p {
+    text-align: center;
+    margin-top: 10px;
 }
