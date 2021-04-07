@@ -73,7 +73,7 @@ body {
 
 }
 
-.menu-album-2 > span::before{
+.menu-album-2 > div::before{
 content: "";
 position: absolute;
 background-color: green;
@@ -90,10 +90,10 @@ display: block;
     color: grey;
 }
 
-.displayN {
+.active{
 display:none
 }
 
-.displayY {
+.inactive {
     display: block;
 }
