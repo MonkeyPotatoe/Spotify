@@ -196,7 +196,7 @@ ul li::before {
 
 }
 
-.menu-album-2 > div::before{
+.menu-album-2 > span::before{
 content: "";
 position: absolute;
 background-color: green;
@@ -213,11 +213,11 @@ display: block;
     color: grey;
 }
 
-.active{
+.displayN {
 display:none
 }
 
-.inactive {
+.displayY {
     display: block;
 
 }
