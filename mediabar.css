@@ -22,3 +22,6 @@ img {
 .album-name {
   max-width: 300px;
 }
+.slidecontainer {
+  width: 100%;
+}
