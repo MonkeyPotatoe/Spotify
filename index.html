@@ -11,20 +11,20 @@
     </head>
     <body>
         <!-- Main Container -->
-        <div class="container">
+        <div id="main-container" class="container-fluid">
             <!-- Upper Parts of Main Container -->
-            <div class="container">
+            <div id="upper-container" class="container">
                 <!-- Upper Part - Nav Left -->
-                <div class="container"><!-- Put the left nav bar here -->></div>
+                <div id="left-navbar" class="container"><!-- Put the left nav bar here -->></div>
                 <!-- Upper Part - Main Content -->
-                <div class="container">
-                    <!-- This is a "canvas" for the different pages like artist    -->
-                    <!-- This is a "canvas" for the different pages like album     -->
-                    <!-- This is a "canvas" for the different pages like frontpage -->
+                <div id="inner-canvas" class="container">
+                    <div id="frontpage" class="container"><!-- Put the frontpage here --></div>
+                    <div id="artists" class="container hide"><!-- Put the artists here --></div>
+                    <div id="albums" class="container hide"><!-- Put the albums here --></div>
                 </div>
             </div>
             <!-- Lower Part of Main Container / Music Controls -->
-            <div class="container"><!-- Put the music controller here -->></div>
+            <div id="music-control" class="container"><!-- Put the music controller here -->></div>
         </div>
 
         <!-- Bootstrap logic -->
