@@ -125,11 +125,7 @@ body > div.container > h3 {
 }
 
 .top-items a i {
-<<<<<<< Updated upstream
     margin-right: 10px;}
-=======
-    margin-right: 10px; }
->>>>>>> Stashed changes
 
 .nav {
   background-color: black;
@@ -200,19 +196,29 @@ ul li::before {
 
 }
 
-.menu-album-2 > span::before{
-content: "";
-position: absolute;
-background-color: green;
-width: 2%;
-height: 3px;
-top:40px;
-left:20;
-bottom:100;
-transform: 50%;
-display: block;
+.menu-album-2 div::before{
+    content: " ";
+    position: absolute;
+    background-color: green;
+    width: 0%;
+    height: 2px;
+    bottom: -8px;
+    left:50%;
+    bottom:100;
+    transform: 50%;
+    display: block;
+    transition: all 1s ease;
 }
 
+.menu-album-2 div:hover::before{
+   width: 50%;
+   left: 25%;
+}
+
+.menu-album-2 > div {
+    cursor: pointer;
+    position: relative;
+}
 .menu-album-2 > div:hover{
     color:white;
 }
