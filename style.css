@@ -1,7 +1,10 @@
+
 body {
     color: white;
     background-color: rgb(34, 34, 34);
     font-family: sans-serif;
+   font-family: 'Open Sans', sans-serif !important;
+    font-size: 11px !important;
 }
 
 #sidebar a {
@@ -123,5 +126,98 @@ body > div.container > h3 {
 
 .top-items a i {
     margin-right: 10px;
+
+.nav {
+  background-color: black;
+  color: white;
+
+  height: 100vh;
+}
+
+.navbar-button {
+  border-radius: 20px !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "\f015";
+  padding: 0 10px 0 0;
+  font-family: "Font Awesome 5 Free";
+  z-index: 1;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.album-container {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    266deg,
+    rgba(2, 0, 36, 1) 20%,
+    rgba(9, 9, 121, 0.969625350140056) 79%,
+    rgba(21, 40, 41, 0.7399334733893557) 100%
+  );
+  color: white;
+}
+
+.card img {
+  border-radius: 0px;
+  border: 0px;
+  box-shadow: black;
+  border-style: hidden;
+}
+
+.card {
+  border-style: hidden !important;
+  position: relative;
+
+  -webkit-box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.74);
+  box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.74);
+}
+
+
+.logo-spotify-copyright{
+    position: absolute; 
+    width: 15px !important;
+    margin-left: 8px;
+    margin-top: 8px;
+    opacity: 80%;
+
+
+
+}
+
+.menu-album-2 > div::before{
+content: "";
+position: absolute;
+background-color: green;
+width: 2%;
+height: 3px;
+top:40px;
+left:20;
+bottom:100;
+transform: 50%;
+display: block;
+}
+
+.menu-album-2 > div:hover{
+    color: grey;
+}
+
+.active{
+display:none
+}
+
+.inactive {
+    display: block;
 
 }
