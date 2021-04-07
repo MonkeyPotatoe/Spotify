@@ -83,12 +83,12 @@ a:hover {
 #sidebar {
     background-color: black;
    
-    height: 100vh;
+   height: 93vh;
 }
 
 .line-break {
     background-color: grey;
-    width: 10%;
+    width: 80%;
     margin: 8px;
     margin-left: 25px;
 }
