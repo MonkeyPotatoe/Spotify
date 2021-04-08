@@ -233,7 +233,7 @@ ul li::before {
 
 }
 
-.menu-album-2 div::before{
+.nav-item::before{
     content: " ";
     position: absolute;
     background-color: green;
@@ -245,6 +245,7 @@ ul li::before {
     transform: 50%;
     display: block;
     transition: all 1s ease;
+    z-index: 1;
 }
 
 .menu-album-2 div:hover::before{
