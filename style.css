@@ -186,46 +186,103 @@ body > div.container > h3 {
     font-weight: bold !important;
 }
 
-.card-karaoke p {
-    text-align: center;
-    margin-top: 10px;
-}
 
-#albums {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      321deg,
-      rgba(0, 0, 0, 1) 64%,
-      rgba(46, 46, 46, 1) 100%
-    );
+
+  
+  #frontpage .nav {
+    background-color: black;
     color: white;
-    font-weight: bold;
+  
+    height: 100vh;
   }
   
-  #albums .play-button {
-    border-radius: 20px;
-    width: 100px;
-    font-size: smaller;
+  #frontpage .navbar-button {
+    border-radius: 20px !important;
   }
-  #albums tr > td {
-    padding: 40px;
+  
+  #frontpage ul {
+    list-style-type: none;
   }
-  #albums img {
-    max-height: 300px;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
+  
+  #frontpage ul li::before {
+    content: "\f015";
+    padding: 0 10px 0 0;
+    font-family: "Font Awesome 5 Free";
+    z-index: 1;
   }
-  #albums .filter-grey {
-    filter: grayscale(100%) invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
-      brightness(70%) contrast(119%);
-    height: 20px;
-    width: 20px;
+  
+  #frontpage .icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
   }
-  #albums .filter-white {
-    filter: invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
-      brightness(1000%) contrast(119%);
-    height: 20px;
-    width: 20px;
+  
+  #frontpage .album-container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      266deg,
+      rgba(2, 0, 36, 1) 20%,
+      rgba(9, 9, 121, 0.969625350140056) 79%,
+      rgba(21, 40, 41, 0.7399334733893557) 100%
+    );
+    color: white;
+  }
+  
+  #frontpage .card img {
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: black;
+    border-style: hidden;
+  }
+  
+  #frontpage .card {
+    border-style: hidden !important;
+    position: relative;
+  
+    -webkit-box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.74);
+    box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.74);
+  }
+  
+  
+  #frontpage .logo-spotify-copyright{
+      position: absolute; 
+      width: 15px !important;
+      margin-left: 8px;
+      margin-top: 8px;
+      opacity: 80%;
+  
+  
+  
+  }
+  
+  #frontpage .nav-item::before{
+      content: " ";
+      position: absolute;
+      background-color: green;
+      width: 0%;
+      height: 2px;
+      bottom: -8px;
+      left:50%;
+      bottom:100;
+      transform: 50%;
+      display: block;
+      transition: all 1s ease;
+      z-index: 1;
+  }
+  
+  #frontpage .menu-album-2 div:hover::before{
+     width: 50%;
+     left: 25%;
+  
+      margin-right: 10px;
+  
+  }
+  
+  #frontpage .card-karaoke p {
+      text-align: center;
+      margin-top: 10px;
   }
   
