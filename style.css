@@ -17,8 +17,9 @@ body {
     font-size: 12px;
 
 }
+
 #sidebar i {
-    color: #b3b3b3
+    color: #b3b3b3;
     font-size: 17px;
     
 }
@@ -174,8 +175,57 @@ body > div.container > h3 {
     margin-left: 27px;
 }
 
+#sidebar > div.bottom-icons > div.d-flex.ml-3 > a > i {
+    color: #b3b3b3 !important;
+    font-size: 17px !important;
+
+}
+#sidebar > div.bottom-icons > div.d-flex.ml-3 > a {
+    color:#b3b3b3 !important;
+    font-size: 11px  !important;
+    font-weight: bold !important;
+}
+
 .card-karaoke p {
     text-align: center;
     margin-top: 10px;
 }
 
+#albums {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      321deg,
+      rgba(0, 0, 0, 1) 64%,
+      rgba(46, 46, 46, 1) 100%
+    );
+    color: white;
+    font-weight: bold;
+  }
+  
+  #albums .play-button {
+    border-radius: 20px;
+    width: 100px;
+    font-size: smaller;
+  }
+  #albums tr > td {
+    padding: 40px;
+  }
+  #albums img {
+    max-height: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  #albums .filter-grey {
+    filter: grayscale(100%) invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
+      brightness(70%) contrast(119%);
+    height: 20px;
+    width: 20px;
+  }
+  #albums .filter-white {
+    filter: invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
+      brightness(1000%) contrast(119%);
+    height: 20px;
+    width: 20px;
+  }
+  
