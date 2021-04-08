@@ -173,3 +173,8 @@ body > div.container > h3 {
     margin-left: 27px;
 }
 
+.card-karaoke p {
+    text-align: center;
+    margin-top: 10px;
+}
+
