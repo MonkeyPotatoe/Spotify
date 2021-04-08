@@ -8,7 +8,7 @@ body {
 }
 
 #sidebar a {
-    color: grey;
+    color:#b3b3b3;
     font-size: 11px;
     font-weight: bold;
     
@@ -18,8 +18,9 @@ body {
 
 }
 #sidebar i {
-    color: white;
+    color: #b3b3b3
     font-size: 17px;
+    
 }
 
 #sidebar > div.d-flex.flex-column.align-start.top-items.ml-3.mt-3.top-icons > a.nav-link.active.mt-3 > i {
@@ -252,27 +253,13 @@ ul li::before {
    width: 50%;
    left: 25%;
 }
-
-.menu-album-2 > div {
-    cursor: pointer;
-    position: relative;
-}
-.menu-album-2 > div:hover{
-    color:white;
+#sidebar > div.bottom-icons > div:nth-child(1) > a > i {
+    margin-right: 10px;
+    font-size: 17px;
 }
 
-.menu-album-2{
-    color:grey
-    
-}
-
-.displayN {
-display:none
-}
-
-.displayY {
-    display: block;
-
+#sidebar > div.bottom-icons > div.d-flex.mb-3 {
+    margin-left: 27px;
 }
 
 .card-karaoke p {
