@@ -22,6 +22,7 @@
 
         #left-navbar {
             background-color: purple;
+            height: 93vh;
         }
 
         #inner-canvas {
@@ -32,16 +33,20 @@
             background-color: blue;
             height: 7vh;
         }
-        .no-padding { 
-            padding: 0;
-            overflow-x: hidden;
+        
+        #frontpage {
+            height: 93vh;
+            overflow-y: scroll;
+            min-width: 100%;
+           
         }
+
     </style>
 </head>
 
 <body>
     <!-- Main Container - Entire Width -->
-    <div id="main-container" class="container-fluid no-padding">
+    <div id="main-container" class="container-fluid p-0">
         <div class="row no-gutters">
 
             <div class="col-sm-4 col-md-2">
@@ -84,7 +89,7 @@
             <div id="inner-canvas" class="col-sm-8 col-md-10">
                 <!-- Upper Part Right - Main Content -->
                 
-                    <div id="frontpage" class="container">
+                    <div id="frontpage" class="container p-0">
                         <div>
                             <div class="container-fluid no-margin banner">
                                     
@@ -206,8 +211,8 @@
 
         </div>
 
-        <div class="row">
-            <div class="col-12">
+        <div class="row m-0">
+            <div class="col-12 p-0">
             <!-- Lower Part of Main Container / Music Controls -->
             <div id="music-control" class="container-fluid">
                 <!-- Put the music controller here -->
