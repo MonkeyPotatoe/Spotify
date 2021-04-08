@@ -2,9 +2,10 @@
   height: 120px;
   color: white;
   width: 100%;
-
-  background-image: url("img_flowers.jpg");
   background-size: 100% 100%;
+}
+.firstbox {
+  color: white;
 }
 img {
   height: 80px;
@@ -12,8 +13,10 @@ img {
 }
 .multi-media,
 img {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
+  filter: grayscale(100%) invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
+    brightness(70%) contrast(119%);
 }
 .album {
   height: 80px;
@@ -26,11 +29,17 @@ img {
   width: 100%;
 }
 .slider {
+  -webkit-appearance: none;
   width: 100%;
-  height: 25px;
-  background: #4caf50;
+  height: 15px;
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
+  background: rgb(202, 255, 96);
+  border-radius: 15px;
+}
+.heart {
+  height: 20px;
+  width: 20px;
 }
