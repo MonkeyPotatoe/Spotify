@@ -163,7 +163,7 @@ body > div.container > h3 {
 }
 
 .top-items a i {
-<<<<<<< HEAD
+
     margin-right: 10px;}
 
 .nav {
@@ -254,7 +254,9 @@ ul li::before {
    width: 50%;
    left: 25%;
 
+
     margin-right: 10px;
+
 
 }
 #sidebar > div.bottom-icons > div:nth-child(1) > a > i {
