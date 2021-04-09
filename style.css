@@ -17,8 +17,17 @@ body {
     font-size: 12px;
 
 }
+
+#first img {
+
+    -webkit-box-shadow: 0px 0px 35px -3px rgba(187, 187, 187, 0.74);
+    -moz-box-shadow: 0px 0px 35px -3px rgba(92, 92, 92, 0.74);
+    box-shadow: 0px 0px 35px -3px rgba(170, 170, 170, 0.74);
+  
+}
+
 #sidebar i {
-    color: #b3b3b3
+    color: #b3b3b3;
     font-size: 17px;
     
 }
@@ -268,7 +277,198 @@ ul li::before {
     margin-left: 27px;
 }
 
-.card-karaoke p {
-    text-align: center;
-    margin-top: 10px;
+#sidebar > div.bottom-icons > div.d-flex.ml-3 > a > i {
+    color: #b3b3b3 !important;
+    font-size: 17px !important;
+
 }
+#sidebar > div.bottom-icons > div.d-flex.ml-3 > a {
+    color:#b3b3b3 !important;
+    font-size: 11px  !important;
+    font-weight: bold !important;
+}
+
+
+
+  
+  #frontpage .nav {
+    background-color: black;
+    color: white;
+  
+    height: 100vh;
+  }
+  
+  #frontpage .navbar-button {
+    border-radius: 20px !important;
+  }
+  
+  #frontpage ul {
+    list-style-type: none;
+  }
+  
+  #frontpage ul li::before {
+    content: "\f015";
+    padding: 0 10px 0 0;
+    font-family: "Font Awesome 5 Free";
+    z-index: 1;
+  }
+  
+  #frontpage .icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  #frontpage .album-container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      266deg,
+      rgba(2, 0, 36, 1) 20%,
+      rgba(9, 9, 121, 0.969625350140056) 79%,
+      rgba(21, 40, 41, 0.7399334733893557) 100%
+    );
+    color: white;
+  }
+  
+  #frontpage .card img {
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: black;
+    border-style: hidden;
+  }
+  
+  #frontpage .card {
+    border-style: hidden !important;
+    position: relative;
+  
+    -webkit-box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.74);
+    box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.74);
+  }
+  
+  
+  #frontpage .logo-spotify-copyright{
+      position: absolute; 
+      width: 15px !important;
+      margin-left: 8px;
+      margin-top: 8px;
+      opacity: 80%;
+  
+  
+  
+  }
+  
+  #frontpage .nav-item::before{
+      content: " ";
+      position: absolute;
+      background-color: green;
+      width: 0%;
+      height: 2px;
+      bottom: -8px;
+      left:50%;
+      bottom:100;
+      transform: 50%;
+      display: block;
+      transition: all 1s ease;
+      z-index: 1;
+  }
+  
+  #frontpage .menu-album-2 div:hover::before{
+     width: 50%;
+     left: 25%;
+  
+      margin-right: 10px;
+  
+  }
+  
+  #frontpage .card-karaoke p {
+      text-align: center;
+      margin-top: 10px;
+  }
+  
+  #albums {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      321deg,
+      rgba(0, 0, 0, 1) 64%,
+      rgba(46, 46, 46, 1) 100%
+    );
+    color: white;
+    font-weight: bold;
+  }
+  
+  #albums .play-button {
+    border-radius: 20px;
+    width: 100px;
+    font-size: smaller;
+  }
+  #albums tr > td {
+    padding: 40px;
+  }
+  #albums img {
+    max-height: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  #albums .filter-grey {
+    filter: grayscale(100%) invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
+      brightness(70%) contrast(119%);
+    height: 20px;
+    width: 20px;
+  }
+  #albums .filter-white {
+    filter: invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
+      brightness(1000%) contrast(119%);
+    height: 20px;
+    width: 20px;
+  }
+
+
+  #music-control .media-bar {
+    height: 5vh;
+    color: white;
+    width: 100%;
+    background-size: 100% 100%;
+  }
+  #music-control .firstbox {
+    color: white;
+  }
+  #music-control img {
+    height: 80px;
+    width: 80px;
+  }
+  #music-control .multi-media, #music-control img {
+    height: 40px;
+    width: 40px;
+    filter: grayscale(100%) invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
+      brightness(70%) contrast(119%);
+  }
+
+  #music-control .album {
+    height: 80px;
+    width: 80px;
+  }
+  #music-control .album-name {
+    max-width: 300px;
+  }
+  #music-control .slidecontainer {
+    width: 100%;
+  }
+  #music-control .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    background: rgb(202, 255, 96);
+    border-radius: 15px;
+  }
+  #music-control .heart {
+    height: 20px;
+    width: 20px;
+  }
