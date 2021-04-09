@@ -15,7 +15,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
-    <title>Document</title>
+    <title>Spotify</title>
     <style>
         #upper-container {
             background-color: powderblue;
@@ -28,7 +28,7 @@
 
         #inner-canvas {
 
-            height: 93vh;
+            height: 90vh;
         }
 
         #music-control {
@@ -37,7 +37,7 @@
         }
 
         #frontpage {
-            height: 93vh;
+            height: 100%;
             overflow-y: scroll;
             min-width: 100%;
 
@@ -47,6 +47,7 @@
             height: 93vh;
             overflow: hidden;
         }
+
         #artists {
             height: 93vh;
             overflow-y: scroll;
@@ -61,11 +62,12 @@
         <div class="row no-gutters">
             <div class="col-sm-4 col-md-2">
                 <!-- Upper Part Left - Nav Left -->
-                <div id="left-navbar">
+                <div id="left-navbar" class="d-none d-sm-flex">
                     <div class="container-fluid no-margin">
                         <div class="d-flex flex-column justify-content-between" id="sidebar">
                             <div class="d-flex flex-column align-start top-items ml-2 mt-3 top-icons">
-                                <a class="navbar-brand pl-2" href="#"><img src="./logo1.png" height="40px" width="110px" alt="" /></a>
+                                <a class="navbar-brand pl-2" href="#"><img src="./logo1.png" height="40px" width="110px"
+                                        alt="" /></a>
                                 <a class="nav-link active mt-3" href="#">
                                     <i class="fas fa-home"></i>Home<span class="sr-only">(current)</span></a>
                                 <a class="nav-link" href="#"> <i class="fas fa-search"></i>Search</a>
@@ -90,7 +92,7 @@
                             <div class="bottom-icons">
                                 <div class="d-flex ml-3">
                                     <a class="nav-link text-muted" href="#">
-                                        <i class="fas fa-download"></i>Install Apps</a>
+                                        <i class="fas fa-download"></i>Install App</a>
                                 </div>
                                 <hr class="line-break" />
                                 <div class="d-flex mb-3">
@@ -119,19 +121,19 @@
                                     <div class=" " style="flex-grow: 0;" id="navbarSupportedContent">
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">TRENDING</a>
+                                                <a class="nav-link" onclick="underline()" href="#">TRENDING</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">PODCAST</a>
+                                                <a class="nav-link" onclick="underline()" href="#">PODCAST</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">MOODS AND GENERE</a>
+                                                <a class="nav-link" onclick="underline()" href="#">MOODS AND GENERE</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">NEW RELEASES</a>
+                                                <a class="nav-link" onclick="underline()" href="#">NEW RELEASES</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">DISCOVER</a>
+                                                <a class="nav-link" onclick="underline()" href="#">DISCOVER</a>
                                             </li>
                                         </ul>
 
@@ -140,7 +142,7 @@
                             </nav>
 
 
-                            <h2 class="mt-5 pl-5">#TROWBACKTHURSDAY</h2>
+                            <h2 class="mt-5 text-break pl-5">#THROWBACKTHURSDAY</h2>
 
                             <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 my-3 pl-5">
                                 <div class="col card-karaoke">
@@ -161,7 +163,7 @@
                                             class="card-img-top logo-spotify-copyright" alt="..." style="">
 
                                     </div>
-                                    <p>italian karaoke</p>
+                                    <p>italianish karaoke</p>
 
 
 
@@ -272,9 +274,9 @@
                                 </div>
 
                                 <ul class="d-flex mt-5 list">
-                                    <li class="px-4"><a href="#first">OVERVIEW</a></li>
-                                    <li class="px-4"><a href="">RELATED ARTISTS</a></li>
-                                    <li class="px-4"><a href="">ABOUT</a></li>
+                                    <li class="px-4"><a onclick="underline1()" href="#">OVERVIEW</a></li>
+                                    <li class="px-4"><a onclick="underline1()" href="#">RELATED ARTISTS</a></li>
+                                    <li class="px-4"><a onclick="underline1()" href="#">ABOUT</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -537,8 +539,9 @@
             <div class="col-12 p-0">
                 <!-- Lower Part of Main Container / Music Controls -->
                 <div id="music-control" class="container-fluid">
+
                     <div class="fixed-bottom navbar-dark bg-dark ">
-                        <div class="container-fluid">
+                        
                             <div class="row d-flex justify-content-between">
                 
                                 <div class="col-4 col-sm-6 col-md-4 justify-content-start no-gutters d-none d-sm-flex firstbox">
@@ -578,7 +581,7 @@
                 
                 
                 
-                                <div class="col-4 col-md-4 col-sm-6 d-flex justify-content-end">
+                                <div class="col-4 col-md-4 col-sm-6 d-none d-sm-flex justify-content-end">
                                     <div class="mt-5 mr-3 d-flex">
                                         <img class="mr-3" style="height:30px!important; width:30px !important"src="./document.svg">
                                         <img class="mr-3" style="height:30px!important; width:30px !important"src="./personal-computer.svg">
@@ -589,10 +592,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                       
                     </div>
-                    </div>
-                
+                    
+
+            
+
+
                 </div>
             </div>
         </div>
@@ -604,7 +610,7 @@
         const changeCanvas = () => {
 
             page = event.target.innerText
-            
+
             console.log(page);
 
             let frontpage = document.getElementById("frontpage")
@@ -631,6 +637,33 @@
         }
 
 
+        const underline = function () {
+
+            const links = document.querySelectorAll("#navbarSupportedContent a")
+
+            const self = event.target
+
+
+
+            for (const link of links) {
+                link.classList.remove("underline")
+            }
+            self.classList.add("underline")
+        }
+
+        const underline1 = function () {
+
+            const links = document.querySelectorAll("#artists .list a")
+            console.log(links);
+            const self = event.target
+
+
+
+            for (const link of links) {
+                link.classList.remove("underline")
+            }
+            self.classList.add("underline")
+        }
 
     </script>
 
