@@ -9,7 +9,8 @@ body {
 #sidebar {
   background-color: black;
  
- height: 90vh;
+  height: 100%;
+ background-size: 100%;
 }
 #sidebar a {
     color:#b3b3b3;
@@ -231,6 +232,8 @@ body > div.container > h3 {
     );
     color: white;
     background-attachment: fixed;
+
+    background-size: 100%;
 
   }
   

@@ -22,13 +22,14 @@
         }
 
         #left-navbar {
-            background-color: purple;
-            height: 85vh;
+            
+            height: 100%
         }
 
         #inner-canvas {
 
-            height: 90vh;
+            height: 91vh;
+           
         }
 
         #music-control {
@@ -38,21 +39,23 @@
 
         #frontpage {
             height: 100%;
-            overflow-y: scroll;
+            
             min-width: 100%;
+            overflow-y: scroll;
 
         }
 
         #albums {
             height: 93vh;
-            overflow: hidden;
+           
         }
 
         #artists {
             height: 93vh;
+          
             overflow-y: scroll;
-
         }
+
     </style>
 </head>
 
@@ -60,7 +63,7 @@
     <!-- Main Container - Entire Width -->
     <div id="main-container" class="container-fluid p-0">
         <div class="row no-gutters">
-            <div class="col-sm-4 col-md-2">
+            <div class="col-sm-3 col-md-2">
                 <!-- Upper Part Left - Nav Left -->
                 <div id="left-navbar" class="d-none d-sm-flex">
                     <div class="container-fluid no-margin">
@@ -535,7 +538,7 @@
             </div>
         </div>
 
-        <div class="row m-0">
+        <div class="row d-none d-lg-block m-0">
             <div class="col-12 p-0">
                 <!-- Lower Part of Main Container / Music Controls -->
                 <div id="music-control" class="container-fluid">
@@ -544,7 +547,7 @@
                         
                             <div class="row d-flex justify-content-between">
                 
-                                <div class="col-4 col-sm-6 col-md-4 justify-content-start no-gutters d-none d-sm-flex firstbox">
+                                <div class="col-4 col-sm-6 col-md-4 justify-content-start no-gutters d-md-flex firstbox">
                                     <div class="row">
                                         <div class="col-4 col-sm-4 justify-content-center no-gutters">
                                             <img class="m-2 album" style="filter:none !important" src="./QueenCover.jpg" />
