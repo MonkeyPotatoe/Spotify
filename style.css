@@ -301,12 +301,12 @@ ul li::before {
     list-style-type: none;
   }
   
-  #frontpage ul li::before {
+  /* #frontpage ul li::before {
     content: "\f015";
     padding: 0 10px 0 0;
     font-family: "Font Awesome 5 Free";
     z-index: 1;
-  }
+  } */
   
   #frontpage .icon::before {
     display: inline-block;
