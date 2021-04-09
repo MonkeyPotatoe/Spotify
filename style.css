@@ -7,35 +7,6 @@ body {
     font-size: 11px !important;
 }
 
-p {
-    color: darkslategray;
-  }
-  
-  .drag-container {
-    display: flex;
-    min-height: 100vh;
-  }
-  
-  [class^="panel"] {
-    padding: 60px 24px;
-    background-color: whitesmoke;
-  }
-  
-  .panel-one {
-    width: 40%;
-  }
-  
-  .panel-two {
-    flex: 1;
-    width: 60%;
-  }
-  
-  .dragbar {
-    padding: 6px;
-    cursor: col-resize;
-    background-color: silver;
-  }
-
 #sidebar a {
     color:#b3b3b3;
     font-size: 11px;
@@ -357,6 +328,53 @@ body > div.container > h3 {
   #albums .filter-white {
     filter: invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
       brightness(1000%) contrast(119%);
+    height: 20px;
+    width: 20px;
+  }
+
+
+  #music-control .media-bar {
+    height: 5vh;
+    color: white;
+    width: 100%;
+    background-size: 100% 100%;
+  }
+  #music-control .firstbox {
+    color: white;
+  }
+  #music-control img {
+    height: 80px;
+    width: 80px;
+  }
+  #music-control .multi-media, #music-control img {
+    height: 40px;
+    width: 40px;
+    filter: grayscale(100%) invert(48%) sepia(79%) saturate(2%) hue-rotate(86deg)
+      brightness(70%) contrast(119%);
+  }
+
+  #music-control .album {
+    height: 80px;
+    width: 80px;
+  }
+  #music-control .album-name {
+    max-width: 300px;
+  }
+  #music-control .slidecontainer {
+    width: 100%;
+  }
+  #music-control .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    background: rgb(202, 255, 96);
+    border-radius: 15px;
+  }
+  #music-control .heart {
     height: 20px;
     width: 20px;
   }

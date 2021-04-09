@@ -23,7 +23,7 @@
 
         #left-navbar {
             background-color: purple;
-            height: 93vh;
+            height: 85vh;
         }
 
         #inner-canvas {
@@ -46,6 +46,11 @@
         #albums {
             height: 93vh;
             overflow: hidden;
+        }
+        #artists {
+            height: 93vh;
+            overflow-y: scroll;
+
         }
     </style>
 </head>
@@ -532,19 +537,68 @@
             <div class="col-12 p-0">
                 <!-- Lower Part of Main Container / Music Controls -->
                 <div id="music-control" class="container-fluid">
-                    <!-- Put the music controller here -->
+                    <div class="fixed-bottom navbar-dark bg-dark ">
+                        <div class="container-fluid">
+                            <div class="row d-flex justify-content-between">
+                
+                                <div class="col-4 col-sm-6 col-md-4 justify-content-start no-gutters d-none d-sm-flex firstbox">
+                                    <div class="row">
+                                        <div class="col-4 col-sm-4 justify-content-center no-gutters">
+                                            <img class="m-2 album" style="filter:none !important" src="./QueenCover.jpg" />
+                                        </div>
+                                        <div class="col-8 col-sm-8 justify-content-center mt-4 no-gutters">
+                                            <p>Song for my Father  <span>
+                                                <img class="ml-1 heart"src="./heart.svg">
+                                                <img class="ml-1 heart"src="./add.svg">
+                                            </span><br /><span class="text-muted"><small>Queen</small></span></p>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                
+                                <div class="col-4 col-md-4  d-flex justify-content-center mt-2 media-bar">
+                                    <div class="container ">
+                
+                                        <div class="row justify-content-center p-2">
+                                            <img class="m-1 p-2 multi-media" src="./shuffle-crossing-arrows.svg" /><img
+                                                class="m-1 p-2 multi-media" src="./previous.svg" />
+                                            <img class="m-1 " src="./play-button.svg" />
+                                            <img class="m-1 multi-media p-2" src="./next.svg" />
+                                            <img class="m-1 multi-media p-2" src="./exchange.svg" />
+                                        </div>
+                
+                                        <div class="row">
+                                            <div class="slidecontainer">
+                                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                
+                
+                
+                                <div class="col-4 col-md-4 col-sm-6 d-flex justify-content-end">
+                                    <div class="mt-5 mr-3 d-flex">
+                                        <img class="mr-3" style="height:30px!important; width:30px !important"src="./document.svg">
+                                        <img class="mr-3" style="height:30px!important; width:30px !important"src="./personal-computer.svg">
+                                        <img class="mr-3" style="height:30px!important; width:30px !important"src="./speaker-filled-audio-tool.svg">
+                                        <div class="slidecontainer">
+                                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- TODO
-            [woho] size framework correctly
-            [woho] apply nav
-            [] apply music bar
-            [woh] apply three content
-            [] fix homepage
-        -->
+
 
     <script>
         const changeCanvas = () => {
