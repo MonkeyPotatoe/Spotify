@@ -6,7 +6,12 @@ body {
    font-family: 'Open Sans', sans-serif !important;
     font-size: 11px !important;
 }
-
+#sidebar {
+  background-color: black;
+ 
+  height: 100%;
+ background-size: 100%;
+}
 #sidebar a {
     color:#b3b3b3;
     font-size: 11px;
@@ -81,20 +86,10 @@ a:hover {
     font-weight: bold;
 }
 
-.list li a:active {
-    text-decoration: underline lightgreen 2px;
-    
-
-}
 .list li {
     list-style: none;
 }
 
-#sidebar {
-    background-color: black;
-   
-   height: 93vh;
-}
 
 .line-break {
     background-color: grey;
@@ -330,6 +325,10 @@ ul li::before {
       rgba(21, 40, 41, 0.7399334733893557) 100%
     );
     color: white;
+    background-attachment: fixed;
+
+    background-size: 100%;
+
   }
   
   #frontpage .card img {
@@ -359,29 +358,45 @@ ul li::before {
   
   
   }
-  
-  #frontpage .nav-item::before{
+/*   
+  #frontpage #navbarSupportedContent ul >li::before{
       content: " ";
       position: absolute;
       background-color: green;
-      width: 0%;
+      width: 10%;
       height: 2px;
       bottom: -8px;
       left:50%;
       bottom:100;
       transform: 50%;
-      display: block;
+      display: none;
       transition: all 1s ease;
       z-index: 1;
   }
   
-  #frontpage .menu-album-2 div:hover::before{
+  #frontpage #navbarSupportedContent ul > li:hover::before{
      width: 50%;
      left: 25%;
-  
+      display: block;
       margin-right: 10px;
   
+  } */
+
+  #navbarSupportedContent .underline {
+
+    text-decoration: underline green 2px;
+    transition: all 1s ease;
   }
+
+  #artists .underline {
+
+    text-decoration: underline green 2px;
+    transition: all 1s ease;
+  }
+  
+  /* #frontpage h2 {
+    overflow-wrap: ;
+  } */
   
   #frontpage .card-karaoke p {
       text-align: center;
