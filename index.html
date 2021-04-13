@@ -21,14 +21,14 @@
         }
 
         #left-navbar {
-            
+
             height: 100%
         }
 
         #inner-canvas {
 
             height: 91vh;
-           
+
         }
 
         #music-control {
@@ -38,7 +38,7 @@
 
         #frontpage {
             height: 100%;
-            
+
             min-width: 100%;
             overflow-y: scroll;
 
@@ -46,15 +46,14 @@
 
         #albums {
             height: 93vh;
-           
+
         }
 
         #artists {
             height: 93vh;
-          
+
             overflow-y: scroll;
         }
-
     </style>
 </head>
 
@@ -254,6 +253,22 @@
 
 
                             </div>
+                            <h2> Eminem </h2> 
+
+                            <button onclick=getEminem() class="btn btn-primary">Load Eminem Albums</button>
+                            <div id="eminem" class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 my-3 pl-5">
+
+                            </div>
+
+                            <h2> Metallica </h2>
+                            <div id="metallica" class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 my-3 pl-5">
+
+                            </div>
+
+                            <h2> Behemoth </h2>
+                            <div id="behemoth" class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 my-3 pl-5">
+
+                            </div>
                         </div>
 
                     </div>
@@ -263,7 +278,7 @@
                         <div class="container-fluid no-margin banner">
 
                             <div id="main" class="d-flex flex-column align-items-center justify-content-end">
-                                <img class="./bg-image" src="banner.jpg">
+                                <img class="bg-image" src="./banner.jpg">
                                 <h6 class="text-muted mt-5">33,000,575 MONTHLY LISTENERS</h6>
                                 <h1>Queen</h1>
 
@@ -539,73 +554,74 @@
     </div>
 
 
-        <div class="row d-none d-lg-block m-0">
-            <div class="col-12 p-0">
-                <!-- Lower Part of Main Container / Music Controls -->
-                <div id="music-control" class="container-fluid">
+    <div class="row d-none d-lg-block m-0">
+        <div class="col-12 p-0">
+            <!-- Lower Part of Main Container / Music Controls -->
+            <div id="music-control" class="container-fluid">
 
-                    <div class="fixed-bottom navbar-dark bg-dark ">
-                        
-                            <div class="row d-flex justify-content-between">
-                
-                                <div class="col-4 col-sm-6 col-md-4 justify-content-start no-gutters d-md-flex firstbox">
-                                    <div class="row">
-                                        <div class="col-4 col-sm-4 justify-content-center no-gutters">
-                                            <img class="m-2 album" style="filter:none !important" src="./QueenCover.jpg" />
-                                        </div>
-                                        <div class="col-8 col-sm-8 justify-content-center mt-4 no-gutters">
-                                            <p>Song for my Father  <span>
-                                                <img class="ml-1 heart"src="./heart.svg">
-                                                <img class="ml-1 heart"src="./add.svg">
-                                            </span><br /><span class="text-muted"><small>Queen</small></span></p>
-                                        </div>
-                                    
+                <div class="fixed-bottom navbar-dark bg-dark ">
+
+                    <div class="row d-flex justify-content-between">
+
+                        <div class="col-4 col-sm-6 col-md-4 justify-content-start no-gutters d-md-flex firstbox">
+                            <div class="row">
+                                <div class="col-4 col-sm-4 justify-content-center no-gutters">
+                                    <img class="m-2 album" style="filter:none !important" src="./QueenCover.jpg" />
+                                </div>
+                                <div class="col-8 col-sm-8 justify-content-center mt-4 no-gutters">
+                                    <p>Song for my Father <span>
+                                            <img class="ml-1 heart" src="./heart.svg">
+                                            <img class="ml-1 heart" src="./add.svg">
+                                        </span><br /><span class="text-muted"><small>Queen</small></span></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-md-4  d-flex justify-content-center mt-2 media-bar">
+                            <div class="container ">
+
+                                <div class="row justify-content-center p-2">
+                                    <img class="m-1 p-2 multi-media" src="./shuffle-crossing-arrows.svg" /><img
+                                        class="m-1 p-2 multi-media" src="./previous.svg" />
+                                    <img class="m-1 " src="./play-button.svg" />
+                                    <img class="m-1 multi-media p-2" src="./next.svg" />
+                                    <img class="m-1 multi-media p-2" src="./exchange.svg" />
+                                </div>
+
+                                <div class="row">
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
                                     </div>
                                 </div>
-                
-                                <div class="col-4 col-md-4  d-flex justify-content-center mt-2 media-bar">
-                                    <div class="container ">
-                
-                                        <div class="row justify-content-center p-2">
-                                            <img class="m-1 p-2 multi-media" src="./shuffle-crossing-arrows.svg" /><img
-                                                class="m-1 p-2 multi-media" src="./previous.svg" />
-                                            <img class="m-1 " src="./play-button.svg" />
-                                            <img class="m-1 multi-media p-2" src="./next.svg" />
-                                            <img class="m-1 multi-media p-2" src="./exchange.svg" />
-                                        </div>
-                
-                                        <div class="row">
-                                            <div class="slidecontainer">
-                                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
-                                            </div>
-                                        </div>
-                
-                                    </div>
-                                </div>
-                
-                
-                
-                                <div class="col-4 col-md-4 col-sm-6 d-none d-sm-flex justify-content-end">
-                                    <div class="mt-5 mr-3 d-flex">
-                                        <img class="mr-3" style="height:30px!important; width:30px !important"src="./document.svg">
-                                        <img class="mr-3" style="height:30px!important; width:30px !important"src="./personal-computer.svg">
-                                        <img class="mr-3" style="height:30px!important; width:30px !important"src="./speaker-filled-audio-tool.svg">
-                                        <div class="slidecontainer">
-                                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
-                                        </div>
-                                    </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-4 col-md-4 col-sm-6 d-none d-sm-flex justify-content-end">
+                            <div class="mt-5 mr-3 d-flex">
+                                <img class="mr-3" style="height:30px!important; width:30px !important"
+                                    src="./document.svg">
+                                <img class="mr-3" style="height:30px!important; width:30px !important"
+                                    src="./personal-computer.svg">
+                                <img class="mr-3" style="height:30px!important; width:30px !important"
+                                    src="./speaker-filled-audio-tool.svg">
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
                                 </div>
                             </div>
-                       
+                        </div>
                     </div>
-                    
-
-            
-
 
                 </div>
+
+
+
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -641,6 +657,7 @@
         }
 
 
+
         const underline = function () {
 
             const links = document.querySelectorAll("#navbarSupportedContent a")
@@ -668,6 +685,153 @@
             }
             self.classList.add("underline")
         }
+
+        window.onload = () => {
+            
+            getMetallica();
+            getBehemoth();
+        }
+
+
+
+        const getEminem = () => {
+            fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem", {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-key": "9ecfaea264msh5b69f3d4f031056p18ec43jsn1aa1ffcc5c98",
+                    "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
+                }
+            }).then((response) => response.json())
+                .then(albums => {
+
+                    let album = albums.data
+
+
+                    const eminem = document.querySelector("#eminem")
+
+
+                    for (i = 0; i < album.length; i++) {
+
+
+                        let albumCover = document.createElement("div")
+
+                        albumCover.innerHTML = `<div class="col card-karaoke">
+                                    <div class="card" style="">
+                                        <img src="${album[i].album.cover}" class="card-img-top" alt="...">
+                                        <img src="./assets/811-8110601_spotify-logo-transparent-background-transparent-spotify-logo-black.png"
+                                            class="card-img-top logo-spotify-copyright" alt="..." style="">
+                                    </div>
+                                    <p>${album[i].album.title}</p>
+
+                                     </div>`
+                        eminem.appendChild(albumCover)
+
+                    }
+                })
+                .catch(err => {
+                   alert("Could not load, please try again!")
+
+                });
+        }
+
+        const getMetallica = () => {
+
+            fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=Metallica", {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-key": "9ecfaea264msh5b69f3d4f031056p18ec43jsn1aa1ffcc5c98",
+                    "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
+                }
+            })
+                .then((response) =>
+                    response.json()
+                )
+                .then(albums => {
+
+
+                    let album = albums.data
+
+
+                    let metallica = document.querySelector("#metallica")
+
+
+                    for (i = 0; i < album.length; i++) {
+
+                        let albumCover = document.createElement("div")
+
+                        albumCover.innerHTML = `<div class="col card-karaoke">
+                                    <div class="card" style="">
+                                        <img src="${album[i].album.cover}" class="card-img-top" alt="...">
+                                        <img src="./assets/811-8110601_spotify-logo-transparent-background-transparent-spotify-logo-black.png"
+                                            class="card-img-top logo-spotify-copyright" alt="..." style="">
+                                    </div>
+                                    <p>${album[i].title}</p>
+
+                                     </div>`
+                        metallica.appendChild(albumCover)
+
+                    }
+
+                }
+
+                )
+                .catch(err => {
+
+                    metallica.innerText = "Could not load albums, try again!"
+                });
+
+
+        }
+
+
+        const getBehemoth = () => {
+            fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=Behemoth", {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-key": "9ecfaea264msh5b69f3d4f031056p18ec43jsn1aa1ffcc5c98",
+                    "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
+                }
+            })
+
+                .then((response) =>
+                    response.json()
+                )
+                .then(albums => {
+                    console.log(albums);
+
+                    let album = albums.data
+
+                    console.log(album);
+                    let behemoth = document.querySelector("#behemoth")
+
+
+                    for (i = 0; i < album.length; i++) {
+
+                        let albumCover = document.createElement("div")
+
+                        albumCover.innerHTML = `<div class="col card-karaoke">
+                                    <div class="card" style="">
+                                        <img src="${album[i].album.cover}" class="card-img-top" alt="...">
+                                        <img src="./assets/811-8110601_spotify-logo-transparent-background-transparent-spotify-logo-black.png"
+                                            class="card-img-top logo-spotify-copyright" alt="..." style="">
+                                    </div>
+                                    <p>${album[i].title}</p>
+
+                                     </div>`
+                        behemoth.appendChild(albumCover)
+
+                    }
+
+                }
+
+                )
+                .catch(err => {
+
+                    behemoth.innerText = "Could not load albums, try again!"
+                });
+
+        }
+
 
     </script>
 
